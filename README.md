@@ -4,20 +4,20 @@ tutorial to package this https://packaging.python.org/en/latest/tutorials/packag
 
 run this
 
-python3 -m pip install --upgrade build
+py -m pip install --upgrade build
 
 run this from the toml directory
 
-python3 -m build
+py -m build
 
 install twine
 
-python3 -m pip install --upgrade twine
+py -m pip install --upgrade twine
 
 Make sure that you have a pypi account and token
 
-run this to upload to pypi
+run this to upload to pypi and fill in __token__ as username, token as pw
 
-python3 -m twine upload --repository testpypi dist/*
+py -m twine upload --repository testpypi dist/*
 
 then just install from pypi and run it
